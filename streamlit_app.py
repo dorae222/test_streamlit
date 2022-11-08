@@ -6,6 +6,7 @@ import numpy as np
 st.write("# 보험료 예측")
 st.write("> 처음 시도해본 데이터 웹앱입니다!")
 
+st.image('./header.png')
 
 # 첫번째 행
 
