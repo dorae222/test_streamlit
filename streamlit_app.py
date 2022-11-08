@@ -5,7 +5,7 @@ import numpy as np
 # 헤드라인
 st.write("# 보험료 예측")
 st.write("> 처음 시도해본 데이터 웹앱입니다!")
-st.image("https://imgur.com/a/kZAC1yi")
+st.image("https://imgur.com/a/VdF59Gc")
 
 # 첫번째 행
 
