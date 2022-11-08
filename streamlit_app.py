@@ -9,7 +9,7 @@ st.write("> 처음 시도해본 데이터 웹앱입니다!")
 
 # 첫번째 행
 
-r1_col1, r1_col2, r1_col3 = st.slider(3)
+r1_col1, r1_col2, r1_col3 = st.columns(3)
 
 age = r1_col1.number_input("age", step=1, value=23)
 
