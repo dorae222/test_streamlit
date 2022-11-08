@@ -51,4 +51,4 @@ if predict_button:
 
     st.metric("예측 보험료", pred[0])
 
-st.markdown("![Alt Text](https://t1.daumcdn.net/cfile/tistory/222AE950591297590E.gif")
+st.image("https://t1.daumcdn.net/cfile/tistory/222AE950591297590E.gif",width = 400)
