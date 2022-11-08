@@ -7,8 +7,6 @@ st.write("# 보험료 예측")
 st.write("> 조건 설정에 따라 보험료를 산정해보실 수 있습니다.")
 st.write("## 처음 시도해 보는 데이터 웹앱(streamlit)입니다!")
 st.write("- 범주형 변수를 슬라이딩 설정 방식으로 바꿨습니다.")
-st.image("https://miro.medium.com/proxy/0*00dUOGXd68N5eHCR.jpg",width=200)
-
 # 첫번째 행
 
 r1_col1, r1_col2, r1_col3 = st.columns(3)
@@ -18,6 +16,8 @@ age = r1_col1.slider("age", 0, 100)
 bmi = r1_col2.slider("bmi", 0, 50)
 
 children = r1_col3.slider("children", 0,8)
+
+st.image("https://miro.medium.com/proxy/0*00dUOGXd68N5eHCR.jpg",width=200)
 
 # 두번째 행
 r2_col1, r2_col2, r2_col3 = st.columns(3)
