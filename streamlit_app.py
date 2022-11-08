@@ -4,7 +4,7 @@ import numpy as np
 
 # 헤드라인
 st.write("# 보험료 예측")
-st.write("> 처음 시도해본 데이터 웹앱입니다!")
+st.write("> 처음 시도해 보는 데이터 웹앱(streamlit)입니다!")
 # st.image("https://imgur.com/a/WqyvWv8.jpg")
 
 # 첫번째 행
@@ -18,10 +18,7 @@ bmi = r1_col2.slider("bmi", 0, 50)
 children = r1_col3.slider("children", 0,8)
 
 # 두번째 행
-r2_col1, r2_col2, r2_col3 = st.columns(3)
-
-r2_col1.write("smoker")
-smoker = r2_col1.checkbox("")
+r2_col2, r2_col3 = st.columns(2)
 
 sex_option = ("male", "female")
 sex = r2_col2.selectbox("sex", sex_option)
@@ -32,6 +29,11 @@ region = r2_col3.selectbox("region", region_option)
 is_southwest = region_option[0] == region
 is_southeast = region_option[1] == region
 is_northwest = region_option[2] == region
+
+# 세번째 행
+r3_col1 = st.columns(1)
+r3_col1.write("smoker")
+smoker = r3_col1.checkbox("")
 
 # 예측 버튼
 predict_button = st.button("예측")
