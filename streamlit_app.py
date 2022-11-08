@@ -5,7 +5,7 @@ import numpy as np
 # 헤드라인
 st.write("# 보험료 예측")
 st.write("> 처음 시도해본 데이터 웹앱입니다!")
-# st.image("")
+st.image("https://imgur.com/a/WqyvWv8.jpg")
 # 첫번째 행
 
 r1_col1, r1_col2, r1_col3 = st.columns(3)
