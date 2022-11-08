@@ -6,10 +6,6 @@ import numpy as np
 st.write("# 보험료 예측")
 st.write("> 처음 시도해본 데이터 웹앱입니다!")
 
-from PIL import Image
-image = Image.open('img.jpg')
-	
-st.image(image)
 
 # 첫번째 행
 r1_col1 = st.slider(1)
