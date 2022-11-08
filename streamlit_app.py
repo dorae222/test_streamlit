@@ -11,11 +11,11 @@ st.write("> 처음 시도해본 데이터 웹앱입니다!")
 
 r1_col1, r1_col2, r1_col3 = st.columns(3)
 
-age = r1_col1.number_input("age", step=1, value=23)
+age = r1_col1.slider("age", 0, 100)
 
-bmi = r1_col2.number_input("bmi", value=34.40)
+bmi = r1_col2.slider("bmi", 0, 50)
 
-children = r1_col3.number_input("children", step=1, value=0)
+children = r1_col3.slider("children", 0,8)
 
 # 두번째 행
 r2_col1, r2_col2, r2_col3 = st.columns(3)
