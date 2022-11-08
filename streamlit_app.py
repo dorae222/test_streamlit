@@ -1,16 +1,19 @@
 import streamlit as st
 import joblib
 import numpy as np
-from PIL import Image
 
 # 헤드라인
 st.write("# 보험료 예측")
 st.write("> 처음 시도해본 데이터 웹앱입니다!")
 
-image = Image.open('C:\Users\dhj98\Pictures\insurance.jpg')
+from PIL import Image
+image = Image.open('img.jpg')
+	
+st.image(image)
 
 # 첫번째 행
-r1_col1, r1_col2, r1_col3 = st.columns(3)
+r1_col1 = st.slider(1)
+r1_col2, r1_col3 = st.columns(2)
 
 age = r1_col1.number_input("age", step=1, value=23)
 
