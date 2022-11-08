@@ -18,22 +18,21 @@ bmi = r1_col2.slider("bmi", 0, 50)
 children = r1_col3.slider("children", 0,8)
 
 # 두번째 행
-r2_col2, r2_col3 = st.columns(2)
+r2_col1, r2_col2, r2_col3 = st.columns(3)
 
 sex_option = ("male", "female")
-sex = r2_col2.selectbox("sex", sex_option)
+sex = r2_col1.selectbox("sex", sex_option)
 is_male = sex_option[0] == sex
 
 region_option = ('southwest', 'southeast', 'northwest', 'northeast')
-region = r2_col3.selectbox("region", region_option)
+region = r2_col2.selectbox("region", region_option)
 is_southwest = region_option[0] == region
 is_southeast = region_option[1] == region
 is_northwest = region_option[2] == region
 
-# 세번째 행
-r3_col1 = st.columns(1)
-r3_col1.write("smoker")
-smoker = r3_col1.checkbox("")
+r2_col3.write("smoker")
+smoker = r2_col3.checkbox("")
+
 
 # 예측 버튼
 predict_button = st.button("예측")
