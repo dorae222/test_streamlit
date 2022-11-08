@@ -4,7 +4,9 @@ import numpy as np
 
 # 헤드라인
 st.write("# 보험료 예측")
+st.write("> 조건 설정에 따라 보험료를 산정해보실 수 있습니다.")
 st.write("> 처음 시도해 보는 데이터 웹앱(streamlit)입니다!")
+st.write("> 범주형과 명목형에 따라 값 설정 방식을 바꿨습니다.")
 # st.image("https://imgur.com/a/WqyvWv8.jpg")
 
 # 첫번째 행
